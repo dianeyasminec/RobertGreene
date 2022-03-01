@@ -1,0 +1,17 @@
+body{
+    background-color: grey;
+}
+imgRob{
+    float: left;
+    
+}
+img{
+    width: 350px;
+    height: 200px;
+}
+p{
+    float: center;
+}
+.txt-area{
+position: center;
+}
