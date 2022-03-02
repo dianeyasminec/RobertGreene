@@ -1,3 +1,10 @@
+//------------//
+
+document.addEventListener('DOMContentLoaded', (addListener) => {
+    getAllBooks();
+  });
+
+
 //Creating a variable and setting it to data| Surround with Backstick to it's actual strings//
 let BooksDatabase = `{"DatabaseGreene":[
     {
@@ -65,9 +72,36 @@ let BooksDatabase = `{"DatabaseGreene":[
     //Create a function that will display information from Database when click on option selected//
      
     function renderBook(book) {
-
-
-    }
+        const card = document.createElement("li")  
+        card.className= "lists"
+        card.id=`list-${book.id}`
+        card.innerHTML = `
+        <img src="${book.imageURL}" width="100" height="100">
+        <div>
+        <h4>${book.name}</h4>
+        <p>${book.description}</p>
+        </div>
+        <button class="like" onclick = "javascript:alert('click')"> Like </button>
+        <br/>
+        <br/>
+        <textarea id = "comment_${book.id}"class="text" cols=70 rows=10></textarea>
+        <br/>
+        <button class="submit" onclick = "commentDrink('comment_${book.id}', 'list-${book.id}')"> Comment </button>
+        <br/>
+        <br/>
+        <hr/>
+        `
+    
+        document.querySelector("#books").appendChild(card)
+    };
+  
+    function commentDrink(id, listId){
+        const txt = document.getElementById(id)
+        const p = document.createElement('p')
+        p.innerText = txt.value
+        document.getElementById(list)
+        document.getElementById(listId).appendChild(p)
+      }
 
     // Let's create Our Fetch //
 
