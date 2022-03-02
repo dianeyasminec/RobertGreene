@@ -62,9 +62,10 @@ let BooksDatabase = `{"DatabaseGreene":[
        alert("option select")
    });
 
-    //Create a function that will display information from Database//
+    //Create a function that will display information from Database when click on option selected//
      
-    function renderBook() {
+    function renderBook(book) {
+
 
     }
 
@@ -76,3 +77,6 @@ let BooksDatabase = `{"DatabaseGreene":[
         .then(BooksDatabase => BooksDatabase.forEach( book =>renderBook(book
             )));
           };
+          // Creating a card  //
+
+         
