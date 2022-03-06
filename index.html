@@ -1,20 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="index.css">
-
-    <title>Robert Greene</title>
+ <meta charset="UTF-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <link rel="stylesheet" href="index.css">
+ <title>Robert Greene</title>
 </head>
 <body>
 <h1>Welcome to Robert Greene Books's edition</h1>
-<div ><img id="imgRob" src="Robert_Greene_.jpg" alt="Robert Greene black and white picture">Bio in here</div>
-<br> <br> <br>
+<div class="links">
+  <a id="github" href="https://github.com/dianeyasminec">GitHub</a>
+  <a id="linkedIn" href="https://www.linkedin.com/in/diane-compaor%C3%A9/">LinkedIn</a>
+  <a href="mailto:dianeyasminec60@gmail.com">email-me</a>
+</div>
+
+<br> 
+<p id="text"><img id="imgRob" src="Robert_Greene_.jpg" alt="Robert Greene black and white picture">
+ Robert Greene born May 14, 1959 is an American author of books on strategy, power, and seduction.
+ He has written six international bestsellers: The 48 Laws of Power, The Art of Seduction, The 33 Strategies of War, 
+ The 50th Law (with rapper 50 Cent), Mastery, and The Laws of Human Nature. Robert Greene held approximately 80 different
+ jobs before he became known for his first bestseller,After spending years jumping between jobs, he finally met Joost Elffers,   the man to whom Robert pitched his book.These days, many people feel that they have failed if they quit their job or drop out 
+ of school. If they choose to study engineering and end up hating it, they still feel as though they've failed in some way. But
+is that the reality? If we choose a direction and then change course, can that really be considered a failure? Of course not!
+Robert Greene experienced countless failures, but are now renowned for being writers
+</p>
+<h2> Here are my favs of Robert greene Books collections : </h2>
+ <br>   <br> 
+<ol id="books"></ol>
 <form id="form" >
-    <input type="radio" name="Books">
-    <select id="book">
+    <!-- <input type="radio" name="Books"> -->
+    <!-- <select id="book">
         <option value="" disabled selected>Please select a book</option>
         <option value="The 48 Laws of Power">The 48 Laws of Power</option>
         <option value="The Art of Seduction">The Art of Seduction</option>
@@ -24,21 +40,17 @@
         <option value="The 50th Law">The 50th Law</option>
         <option value="The Daily Laws">The Daily Laws</option>
         <option value="The Laws of Human Nature">The Laws of Human Nature</option>
-    </select>
-    <fieldset>
-        <legend>Last thing</legend>
-        <label>Name</label>
+    </select> -->
+    <fieldset id="fieldset">
+        <legend id="legend">Last thing</legend>
+        <label class="label">Name :</label>
         <input type="text">
-        <label>LastName</label>
+        <label class="label">LastName :</label>
         <input type="text">
-  <p> <textarea rows="6" cols="40" class="txt-area"type="submit" placeholder="leave a comment.."></textarea></p>
-   <button>submit</button>
+  <p> <textarea rows="6" cols="40" class="txt-area"type="submit" placeholder=" Please leave me a comment.."></textarea></p>
+   <button id="submit">submit</button>
     </fieldset>
 </form>
-<ul id="books"></ul>
-
-
-
 
 <script src="index.js"></script>
 </body>

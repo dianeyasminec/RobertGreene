@@ -76,20 +76,20 @@ let BooksDatabase = `{"DatabaseGreene":[
         card.className= "lists"
         card.id=`list-${book.id}`
         card.innerHTML = `
-        <img src="${book.imageURL}" width="100" height="100">
+        <img  class="imgBooks" src="${book.imageURL}" width="100" height="100">
         <div>
         <h4>${book.name}</h4>
         <p>${book.description}</p>
         </div>
-        <button class="like" onclick = "javascript:alert('click')"> Like </button>
+        <button class="like" onclick = "javascript:alert('click')"> Like &#128077;</button>
         <br/>
         <br/>
         <textarea id = "comment_${book.id}"class="text" cols=70 rows=10></textarea>
         <br/>
-        <button class="submit" onclick = "commentDrink('comment_${book.id}', 'list-${book.id}')"> Comment </button>
+        <button class="submit" onclick = "commentDrink('comment_${book.id}', 'list-${book.id}')"> Comment  &#x1F4AD;</button>
         <br/>
         <br/>
-        <hr/>
+        
         `
     
         document.querySelector("#books").appendChild(card)
@@ -111,6 +111,6 @@ let BooksDatabase = `{"DatabaseGreene":[
         .then(BooksDatabase => BooksDatabase.forEach( book =>renderBook(book
             )));
           };
-          // Creating a card  //
+         
 
          
